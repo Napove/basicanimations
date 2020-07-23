@@ -11,19 +11,28 @@
   height: 100vh;
 }
 
-div {
+div{
   border: 2px dotted chartreuse;
   width: 20%;
+  
+  
 }
+
+div:hover{
+  animation: strobe_1  2s infinite alternate-reverse;
+}
+
 
 .strobe_1 {
   background-color: yellow;
-  animation: first 2s infinite alternate-reverse;
+  animation: strobe_1  first 2s infinite alternate-reverse;
+  
 }
 
 @keyframes strobe_1 {
   from,to {
     background-color: yellow;
+    
   }
 
   50% {
